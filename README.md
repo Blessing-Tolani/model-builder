@@ -15,7 +15,7 @@ Responsive landing page built with Next.js, Tailwind CSS, and React-Toastify for
 - SEO-ready metadata, semantic heading structure, descriptive copy, and JSON-LD for product and FAQ sections
 - Core Web Vitals-minded implementation with server-rendered content, minimal client-side code, and lazy-loaded toast UI
 - Demo form with success and failure toast states
-- Mock analytics event tracking with optional Google Analytics 4 support
+- Mock analytics event tracking with Google Analytics 4 support
 
 ## Getting Started
 
@@ -40,7 +40,15 @@ If you want to send events to Google Analytics 4, set:
 NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
 ```
 
-Without that environment variable, the app falls back to mock console and `dataLayer` event tracking.
+### Events tracked
+
+- newsletter_subscription_attempt
+- newsletter_subscription_success
+- newsletter_subscription_failure
+- faq_cta_click
+- header_cta_click
+- herosection_cta_click
+- some other events
 
 ## Demo Form Notes
 
