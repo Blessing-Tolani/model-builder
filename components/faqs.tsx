@@ -1,8 +1,16 @@
+'use client'
 import { FAQ_ITEMS } from '@/constants'
-import { Minus, ArrowRight } from 'lucide-react'
+import { Minus, ArrowRight, Plus } from 'lucide-react'
 import { TrackedLink } from './ui/tracked-link'
+import { useState } from 'react'
 
 export default function FAQS() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
+
+  const toggleFAQ = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index)
+  }
+
   return (
     <section
       id="pricing"
@@ -28,24 +36,35 @@ export default function FAQS() {
 
       <div className="mt-12 grid gap-6 lg:grid-cols-[1.15fr_0.95fr]">
         <div className="space-y-6">
-          {FAQ_ITEMS.map((item) => (
-            <article
-              key={item.question}
-              className="border-blue text-black-100 flex justify-between gap-x-4 rounded-md border bg-white p-4 shadow-sm"
-            >
-              <div>
-                <h3 className="max-w-2xl text-lg leading-tight font-bold sm:text-2xl">
-                  {item.question}
-                </h3>
-                <p className="mt-3 max-w-2xl text-sm leading-[1.65] sm:text-xl">
-                  {item.answer}
-                </p>
-              </div>
-              <div className="border-blue text-blue flex size-6 shrink-0 items-center justify-center rounded-full border-2 md:size-11">
-                <Minus size={25} />
-              </div>
-            </article>
-          ))}
+          {FAQ_ITEMS.map((item, index) => {
+            const isOpen = openIndex === index
+
+            return (
+              <article
+                key={item.question}
+                className="border-blue text-black-100 flex justify-between gap-x-4 rounded-md border bg-white p-4 shadow-sm"
+              >
+                <div>
+                  <h3 className="max-w-2xl text-lg leading-tight font-bold sm:text-2xl">
+                    {item.question}
+                  </h3>
+
+                  {isOpen && (
+                    <p className="mt-3 max-w-2xl text-sm leading-[1.65] sm:text-xl">
+                      {item.answer}
+                    </p>
+                  )}
+                </div>
+
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="border-blue text-blue flex size-6 shrink-0 items-center justify-center rounded-full border-2 md:size-10"
+                >
+                  {isOpen ? <Minus size={20} /> : <Plus size={20} />}
+                </button>
+              </article>
+            )
+          })}
         </div>
 
         <aside className="border-blue rounded-md border bg-white p-5 shadow-sm lg:sticky lg:top-28 lg:h-fit">
