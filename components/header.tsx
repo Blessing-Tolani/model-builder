@@ -9,7 +9,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4 sm:px-6 lg:px-8">
         <Link href="/">
           <Image
-            src="/images/proconomics-logo.png"
+            src="/images/proconomics-logo.webp"
             alt="Proconomics logo"
             priority
             width={219}
@@ -37,7 +37,7 @@ export default function Header() {
           </Link>
           <TrackedLink
             href="#newsletter"
-            eventName="hero_cta_click"
+            eventName="header_cta_click"
             eventPayload={{ location: 'header' }}
             className="bg-blue inline-flex items-center rounded-full px-3 py-2 text-base font-bold text-white hover:bg-[#517fe1] md:px-7.5 md:py-4 md:text-lg"
           >

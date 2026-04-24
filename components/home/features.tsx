@@ -11,7 +11,7 @@ export default function FeatureCapabilities() {
       </div>
       <div className="relative w-full bg-[#FCFCFC] lg:mt-4">
         <img
-          src="/images/features-gradient-bg.png"
+          src="/images/features-gradient-bg.webp"
           className="absolute w-full"
           alt=""
         />
@@ -59,12 +59,12 @@ export default function FeatureCapabilities() {
           </div>
         ))}
         <img
-          src="/images/features-gradient-bg.png"
+          src="/images/features-gradient-bg.webp"
           className="absolute top-[40%] w-full"
           alt=""
         />
         <img
-          src="/images/features-gradient-bg.png"
+          src="/images/features-gradient-bg.webp"
           className="absolute w-full lg:-bottom-250"
           alt=""
         />

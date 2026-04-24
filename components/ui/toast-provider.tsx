@@ -12,7 +12,7 @@ export function ToastProvider() {
   return (
     <ToastContainer
       position="top-right"
-      autoClose={10000}
+      autoClose={8000}
       newestOnTop
       pauseOnFocusLoss={false}
       toastClassName="rounded-2xl border border-slate-100 shadow-lg"

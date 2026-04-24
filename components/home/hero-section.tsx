@@ -8,7 +8,7 @@ export default function HeroSection() {
       className="font-satoshi px-4 pt-10 pb-8 sm:px-6 md:pb-16 lg:px-8"
       style={{
         backgroundImage:
-          'linear-gradient(180deg, rgba(100, 149, 237, 0.05) 39.39%, rgba(255, 255, 255, 0.15) 99.46%), url(/images/hero-background.png)',
+          'linear-gradient(180deg, rgba(100, 149, 237, 0.05) 39.39%, rgba(255, 255, 255, 0.15) 99.46%), url(/images/hero-background.webp)',
         backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat',
         backgroundPositionY: '-2%',
@@ -45,8 +45,8 @@ export default function HeroSection() {
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
           <TrackedLink
             href="#newsletter"
-            eventName="hero_cta_click"
-            eventPayload={{ location: 'hero_primary' }}
+            eventName="herosection_cta_click"
+            eventPayload={{ location: 'herosection_primary' }}
             className="bg-blue inline-flex items-center justify-center gap-4 rounded-full border-2 border-white px-6 py-3 text-xl font-medium text-white shadow-lg shadow-[#6c97f5]/20 sm:px-8 sm:py-4"
           >
             Build your first model
@@ -56,8 +56,8 @@ export default function HeroSection() {
           </TrackedLink>
           <TrackedLink
             href="#newsletter"
-            eventName="hero_cta_click"
-            eventPayload={{ location: 'hero_secondary' }}
+            eventName="herosection_cta_click"
+            eventPayload={{ location: 'herosection_secondary' }}
             className="border-blue text-blue inline-flex items-center justify-center gap-4 rounded-full border-2 bg-white px-6 py-3 text-xl font-medium shadow-lg shadow-[#6c97f5]/20 sm:px-8 sm:py-4"
           >
             Book a demo
@@ -69,7 +69,7 @@ export default function HeroSection() {
       </div>
 
       <Image
-        src="/images/model-builder-hero-dashboard.png"
+        src="/images/model-builder-hero-dashboard.webp"
         alt="project financial model dashboard showing ROI NPV IRR"
         priority
         width={1200}
@@ -86,12 +86,12 @@ export default function HeroSection() {
         consistent, and decision-ready.
       </p>
 
-      <section id="templates">
+      <section>
         <h2 className="text-black-100 sr-only pt-5 text-center text-3xl font-medium tracking-[-0.04em] sm:text-5xl">
           Why Teams Use a Project Financial Model Builder
         </h2>
         <Image
-          src="/images/proconomics-use-case.jpg"
+          src="/images/proconomics-use-case.webp"
           alt="project financial model dashboard showing ROI NPV IRR"
           priority
           width={1200}

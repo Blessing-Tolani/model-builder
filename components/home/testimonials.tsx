@@ -4,7 +4,6 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 export default function Testimonials() {
   return (
     <section
-      id="about-us"
       aria-labelledby="testimonials-heading"
       className="font-satoshi relative overflow-hidden px-4 py-16 sm:px-6 lg:px-8"
     >

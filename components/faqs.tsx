@@ -13,7 +13,7 @@ export default function FAQS() {
 
   return (
     <section
-      id="pricing"
+      id="faqs"
       aria-labelledby="faq-heading"
       className="font-satoshi mx-auto max-w-7xl px-4 pb-30 sm:px-6 lg:px-8"
     >
@@ -76,7 +76,7 @@ export default function FAQS() {
             list of FAQs.
           </p>
           <TrackedLink
-            href="#newsletter"
+            href="#faqs"
             eventName="faq_cta_click"
             eventPayload={{ location: 'faq_panel' }}
             className="bg-blue mt-10 inline-flex items-center gap-3 rounded-full p-4 text-lg font-medium text-white md:px-8 md:py-5 md:text-2xl"

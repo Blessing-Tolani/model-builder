@@ -25,18 +25,18 @@ export default function CTA() {
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <TrackedLink
-            href="#newsletter-card"
-            eventName="final_cta_click"
-            eventPayload={{ location: 'final_primary' }}
+            href="#newsletter"
+            eventName="start_building"
+            eventPayload={{ location: 'final_cta_primary' }}
             className="inline-flex items-center gap-3 rounded-full bg-[#d9bcff] px-6 py-3 font-medium text-[#6074ff] sm:px-8 sm:py-5 sm:text-2xl"
           >
             Start building for free
             <ArrowRight className="h-6 w-6" />
           </TrackedLink>
           <TrackedLink
-            href="#newsletter-card"
-            eventName="final_cta_click"
-            eventPayload={{ location: 'final_secondary' }}
+            href=""
+            eventName="see_live_demo"
+            eventPayload={{ location: 'final_cta_secondary' }}
             className="inline-flex items-center gap-3 rounded-full border border-[#6074ff] px-11 py-3 font-medium text-[#6b86ff] sm:px-8 sm:py-5 sm:text-2xl"
           >
             See a live demo

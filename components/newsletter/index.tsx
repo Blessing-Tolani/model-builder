@@ -3,7 +3,7 @@ import { NewsletterForm } from './newsletter-form'
 export default function Newsletter() {
   return (
     <div
-      id="newsletter-card"
+      id="newsletter"
       className="font-satoshi left-1/2 mx-auto w-full max-w-7xl rounded-xl border border-[#e9e9ee] bg-white px-4 py-10 text-slate-900 sm:px-12 md:px-8 lg:grid lg:grid-cols-[0.95fr_1.05fr] lg:gap-12 lg:py-14 xl:absolute xl:-top-52 xl:-translate-x-1/2"
     >
       <div>

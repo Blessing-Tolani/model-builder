@@ -22,7 +22,7 @@ export function NewsletterForm() {
   const handleSubmit = async (event: { preventDefault: () => void }) => {
     event.preventDefault()
     setIsSubmitting(true)
-    trackEvent('newsletter_submit_attempt', {
+    trackEvent('newsletter_subscription_attempt', {
       email_domain: form.email.split('@')[1] || 'unknown',
     })
 
@@ -39,13 +39,13 @@ export function NewsletterForm() {
       })
 
       toast.success('Subscription successful. Fresh insights are on the way.')
-      trackEvent('newsletter_submit_success')
+      trackEvent('newsletter_subscription_success')
       setForm(initialState)
     } catch (error: any) {
       toast.error(
         'Subscription failed. Please try again with a valid work email.',
       )
-      trackEvent('newsletter_submit_failure', { message: error.message })
+      trackEvent('newsletter_subscription_failure', { message: error.message })
     } finally {
       setIsSubmitting(false)
     }

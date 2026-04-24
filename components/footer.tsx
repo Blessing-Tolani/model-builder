@@ -60,7 +60,7 @@ export default function Footer() {
 
       <div className="mx-auto flex max-w-7xl flex-col gap-8 border-t border-white/50 py-11 max-lg:px-4 lg:flex-row lg:items-center lg:justify-between">
         <Image
-          src="/images/acedboard-logo.png"
+          src="/images/acedboard-logo.webp"
           alt="Acedboard logo"
           priority
           width={189}

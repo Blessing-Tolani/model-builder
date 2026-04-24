@@ -30,7 +30,7 @@ export const FEATURES = [
       'Project Financial Model Overview and Business Case Definition',
     title: 'Give leadership the full picture before they ask for it',
     body: "When a sponsor asks 'what is this project actually solving?' or an executive wants context before reviewing the numbers, the overview is ready, not a different format for every analyst on the team. No hunting through emails, no conflicting slide decks. Just a clear, defensible narrative tied directly to the financial model.",
-    image: '/images/project-financial-model-dashboard.png',
+    image: '/images/project-financial-model-dashboard.webp',
     alt: 'project financial model overview',
   },
   {
@@ -38,7 +38,7 @@ export const FEATURES = [
     semanticTitle: 'Project Cost Modeling and Investment Planning',
     title: 'See exactly where every dollar goes before you spend it',
     body: 'Map project costs across categories and timelines. Break down capital expenditure, operating costs, and resource allocation into a structured view that shows when money leaves the organization and what it funds so finance teams can challenge assumptions before they become budget overruns.',
-    image: '/images/project-cost-table.png',
+    image: '/images/project-cost-table.webp',
     alt: 'business case modeling software cost and benefit tables',
   },
   {
@@ -46,7 +46,7 @@ export const FEATURES = [
     semanticTitle: 'Benefit Forecasting and ROI Modeling',
     title: 'Show when the value arrives, not just that it will',
     body: 'Define expected benefits, cost savings, revenue uplift, efficiency gains, and map them against a realistic realization curve. Show stakeholders not just the total projected value, but when the organization will start seeing returns and at what rate.',
-    image: '/images/project-benefits-table.png',
+    image: '/images/project-benefits-table.webp',
     alt: 'project financial model dashboard showing ROI NPV IRR',
   },
   {
@@ -54,7 +54,7 @@ export const FEATURES = [
     semanticTitle: 'Financial Assumptions Management and Model Logic',
     title: 'The numbers are only as good as the logic behind them',
     body: 'Model Builder centralizes every key assumption from cost of capital to discount rate, adoption curves, and headcount multipliers in one governed place. When assumptions change, the model updates. When someone questions a figure, the audit trail shows who set it, when, and why.',
-    image: '/images/model-builder-assumption-table.png',
+    image: '/images/model-builder-assumption-table.webp',
     alt: 'project financial model overview with assumptions and benefits',
   },
   {
@@ -62,7 +62,7 @@ export const FEATURES = [
     semanticTitle: 'Scenario Planning and Financial Sensitivity Analysis',
     title: 'Stop Presenting One Number. Start Presenting the Full Range.',
     body: 'Walk into the board room with confidence. Build and compare multiple scenarios; best case, worst case, and most likely directly within the model. Toggle macro-variables like churn rate, cost of capital, or market adoption, and watch the real-time impact on NPV, IRR, and payback.',
-    image: '/images/scenario-planning-roi-model.png',
+    image: '/images/scenario-planning-roi-model.webp',
     alt: 'scenario planning financial model interface',
   },
   {
@@ -70,7 +70,7 @@ export const FEATURES = [
     semanticTitle: 'Executive Financial Dashboard and ROI Insights',
     title: 'From Model to Decision in One View.',
     body: "Stakeholders don't need to understand the model to understand the outcome. The Dashboard is built for the executive audience: high signal, low noise, immediately actionable. Export it for a board pack. Share a link for live review. Present it in the room with confidence. The Model Builder Dashboard converts your structured inputs into an executive-ready financial summary; NPV, IRR, payback period, cumulative cash flow, and benefit realization curves in one clean, shareable view.",
-    image: '/images/model-builder-dashboard.png',
+    image: '/images/model-builder-dashboard.webp',
     alt: 'ROI dashboard showing project cash flow and payback',
   },
 ]
@@ -81,13 +81,13 @@ export const TESTIMONIALS = [
       'We used to spend two weeks building a business case. Now we have a submission-ready model in under a day with scenario comparisons the CFO actually engages with instead of just approving blindly.',
     name: 'Jerry Paul',
     role: 'Finance Director, Enterprise Technology Company',
-    image: '/images/jerry-paul.png',
+    image: '/images/jerry-paul.webp',
   },
   {
     quote:
       "The assumption documentation alone has saved us from three bad investment decisions. When assumptions are explicit, the conversation changes from 'is this number right?' to 'is this assumption reasonable?'",
     name: 'Jimmy Walker',
     role: 'VP of Finance, Global Professional Services Firm',
-    image: '/images/jimmy-walker.png',
+    image: '/images/jimmy-walker.webp',
   },
 ]
