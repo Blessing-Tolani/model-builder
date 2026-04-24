@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Model Builder Landing Page
+
+Responsive landing page built with Next.js, Tailwind CSS, and React-Toastify for the Proconomics Model Builder assignment.
+
+## Stack
+
+- Next.js App Router
+- Tailwind CSS
+- React-Toastify
+- Lucide React
+
+## Features
+
+- Responsive hero and feature layout modeled from the provided design reference
+- SEO-ready metadata, semantic heading structure, descriptive copy, and JSON-LD for product and FAQ sections
+- Core Web Vitals-minded implementation with server-rendered content, minimal client-side code, and lazy-loaded toast UI
+- Demo form with success and failure toast states
+- Mock analytics event tracking with optional Google Analytics 4 support
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+## Analytics
 
-To learn more about Next.js, take a look at the following resources:
+If you want to send events to Google Analytics 4, set:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Without that environment variable, the app falls back to mock console and `dataLayer` event tracking.
 
-## Deploy on Vercel
+## Demo Form Notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Submitting with a normal email triggers a success toast.
+- Submitting with an email containing `fail` triggers the failure toast so both states can be tested quickly.
