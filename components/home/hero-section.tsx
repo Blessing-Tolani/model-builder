@@ -15,7 +15,7 @@ export default function HeroSection() {
       }}
     >
       <div className="flex flex-col items-center text-center sm:mx-auto">
-        <div className="border-blue bg-blue/10 inline-flex items-center gap-3.5 rounded-full border-2 px-7.5 py-2.5 text-xs font-medium text-gray-100 uppercase md:text-sm">
+        <div className="border-blue bg-blue/10 inline-flex items-center gap-x-2.5 rounded-full border-2 px-7.5 py-2.5 text-xs font-medium text-gray-100 uppercase sm:gap-3.5 md:text-sm">
           <Link href="/" className="underline underline-offset-4">
             Home
           </Link>
